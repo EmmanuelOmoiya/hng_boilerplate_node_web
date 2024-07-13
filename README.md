@@ -496,5 +496,20 @@ Here are API endpoints and their specifications:
 
 This project is versioned to ensure backward compatibility and easy maintenance. The current version is [version].
 
-## Contribution Guide
-Refer to [CONTRIBUTING.md](./CONTRIBUTING.md) to learn more.
+## Contributors
+
+- Emmanuel Omoiya emmanuelomoiya6@gmail.com
+- Aroso Emmanuel Adedeji emarc.aroso@outlook.com
+- Nnenna Kehinde nneukamaka@gmail.com
+
+## Contributing
+We welcome contributions to this Boilerplate project. Please follow these guidelines when contributing:
+
+1. Fork the repository and create a new branch for your feature or bug fix.
+2. Follow the coding standards and conventions used in the project.
+3. Keep your code as decoupled as possible to maintain modularity.
+4. Write clear and concise commit messages.
+5. Submit a pull request with a detailed description of your changes.
+
+For more information on our coding standards and best practices, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+
