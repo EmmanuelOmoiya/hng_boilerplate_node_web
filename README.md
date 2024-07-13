@@ -3,13 +3,268 @@
 ## Overview
 
 [Description]
+Strany is a robust boilerplate API that offers developers with the ease and speed in creating lightning fast, robust and scalable web servers for their web apps.
+
+## Features
+This boilerplate includes the following features:
+
+- Authentication (including social and magic link)
+- Email messaging with background processing
+- Payment integrations (Stripe, Flutterwave, LemonSqueezy)
+- User and organization management
+- Superadmin interface
+- Settings and profile management
+- Landing pages (privacy policy, about us, etc.)
+- Contact form
+- GDPR-compliant cookie handling
+- Basic dashboard
+- Waitlist functionality
+- Marketing/squeeze page
+- User invitation flow
+- User data export
+- Random data management associated with users
+- Search and sorting capabilities
+- Data visualization with charts
+- Content editing
+- Notifications system
+- Blog functionality
+- Invite link generation
+- Language and region settings
+- Email template management
+- AI integration
+- Activity logging
+- Push notifications
+
+## Features
+
+### Authentication
+- User registration and login
+- Social authentication (Google, Facebook, etc.)
+- Magic link authentication
+- In-app authentication screens (login, register, forgot password, reset password)
+- Change password functionality
+
+### Messaging
+- Email integration with background processing
+- Default email templates for common scenarios (welcome, password reset, etc.)
+
+### Payments
+- Integration with multiple payment gateways:
+  - Stripe
+  - Flutterwave
+  - LemonSqueezy
+- Support for both internal and external payments
+
+### Users & Organizations
+- User management system
+- Organization management
+- User roles and permissions
+
+### Admin Interface
+- Superadmin dashboard
+- User management
+- Organization management
+- Payment oversight
+- Activity log viewer
+
+### Settings & Profile
+- User profile settings
+- Application settings page
+
+### Landing Pages
+- Privacy policy page
+- About us page
+- Contact us page with form submission
+- GDPR-compliant cookie consent
+
+### Dashboard
+- Basic user dashboard
+- Waitlist feature (coming soon)
+- Squeeze/Marketing page
+
+### Data Management
+- Random data associated with users
+- Dashboard widgets
+- List view of user-associated data
+- Single data item view
+- Searchable and sortable data lists
+- Chart page for data visualization
+- Content editing page
+
+### Notifications
+- In-app notification system
+
+### Blog
+- Basic blog functionality
+
+### Internationalization
+- Language and region selection
+- Localization support
+
+### Email Template Management
+- HTML email template management in the admin interface
+
+### Database & Migrations
+- Database schema and migrations
+- Recommendations for optimal database usage
+
+### AI Integration
+- Basic AI integration capabilities
+
+### Activity Log
+- Comprehensive activity logging system
+
+### Push Notifications
+- Support for push notifications
+
+# Concept Studies:
+[ERD Design: https://app.swaggerhub.com/apis/EMMANUELOMOIYA6/Backend-stage-3/1.0.0]
+The Entity-Relationship Diagram represents a robust and flexible schema for a multi-faceted application. Here's an analysis of the relationships and key design aspects:
+
+## User-Centric Design:
+The User collection is at the center of the ERD, with many other collections referencing it. This allows for a personalized experience across various features.
+
+## Organization Management:
+The Organization collection has a many-to-many relationship with Users through the members array, enabling flexible team structures.
+
+## Payment Tracking:
+The Payment collection is linked to Users, allowing for detailed financial tracking per user.
+
+## Messaging System:
+The Message and EmailTemplate collections work together to provide a flexible messaging system with reusable templates.
+
+## Customizable Widgets:
+The Widget collection, linked to Users, allows for personalized dashboard experiences.
+
+## Activity Logging:
+The ActivityLog collection, tied to Users, enables comprehensive tracking of user actions.
+
+## Content Management:
+The Content and BlogPost collections provide a foundation for managing various types of content.
+
+## Notification System:
+The Notification collection, linked to Users, allows for a personalized notification experience.
+
+## Invitation System:
+The Invite collection facilitates user onboarding to organizations.
+
+## API Specifications:
+Here are API endpoints and their specifications:
+
+## User Management:
+-- POST /api/users - Create a new user
+-- GET /api/users/:id - Retrieve user details
+-- PUT /api/users/:id - Update user information
+-- DELETE /api/users/:id - Delete a user (or deactivate)
+
+
+## Authentication:
+
+POST /api/auth/login - User login
+POST /api/auth/register - User registration
+POST /api/auth/forgot-password - Initiate password reset
+POST /api/auth/reset-password - Reset password
+POST /api/auth/social/:provider - Social authentication
+
+
+Organization Management:
+
+-- POST /api/organizations - Create a new organization
+-- GET /api/organizations/:id - Retrieve organization details
+-- PUT /api/organizations/:id - Update organization information
+-- DELETE /api/organizations/:id - Delete an organization
+-- POST /api/organizations/:id/members - Add a member to an organization
+-- DELETE /api/organizations/:id/members/:userId - Remove a member from an organization
+
+
+## Payment Management:
+
+-- POST /api/payments - Create a new payment
+-- GET /api/payments/:id - Retrieve payment details
+-- GET /api/users/:id/payments - Retrieve user's payment history
+
+
+## Messaging:
+
+-- POST /api/messages - Send a new message
+-- GET /api/messages/:id - Retrieve message details
+-- GET /api/users/:id/messages - Retrieve user's message history
+
+
+## Email Templates:
+
+-- POST /api/email-templates - Create a new email template
+-- GET /api/email-templates/:id - Retrieve template details
+-- PUT /api/email-templates/:id - Update a template
+-- DELETE /api/email-templates/:id - Delete a template
+
+
+## Widget Management:
+
+-- POST /api/widgets - Create a new widget
+-- GET /api/widgets/:id - Retrieve widget details
+-- PUT /api/widgets/:id - Update a widget
+-- DELETE /api/widgets/:id - Delete a widget
+-- GET /api/users/:id/widgets - Retrieve user's widgets
+
+
+## Activity Logging:
+
+-- GET /api/activity-logs - Retrieve activity logs (with filtering options)
+-- GET /api/users/:id/activity-logs - Retrieve user's activity logs
+
+
+## Content Management:
+
+-- POST /api/content - Create new content
+-- GET /api/content/:id - Retrieve content
+-- PUT /api/content/:id - Update content
+-- DELETE /api/content/:id - Delete content
+
+
+## Blog Management:
+
+-- POST /api/blog-posts - Create a new blog post
+-- GET /api/blog-posts/:id - Retrieve a blog post
+-- PUT /api/blog-posts/:id - Update a blog post
+-- DELETE /api/blog-posts/:id - Delete a blog post
+-- GET /api/blog-posts - Retrieve all blog posts (with pagination)
+
+
+## Notification System:
+
+-- POST /api/notifications - Create a new notification
+-- GET /api/notifications/:id - Retrieve notification details
+-- PUT /api/notifications/:id - Update a notification (e.g., mark as read)
+-- GET /api/users/:id/notifications - Retrieve user's notifications
+
+
+## Invitation System:
+
+-- POST /api/invites - Create a new invite
+-- GET /api/invites/:id - Retrieve invite details
+-- PUT /api/invites/:id - Update an invite (e.g., accept/reject)
+-- DELETE /api/invites/:id - Delete an invite
+
+
 
 ## Folder Structure
 
 ```
 |--- modules
-|    |--- controllers
-|    |--- database
+|    |--- user
+|    |--- organisation
+|    |--- notification
+|    |--- payment
+|    |--- message
+|    |--- emailTemplate
+|    |--- widget
+|    |--- activityLog
+|    |--- contact
+|    |--- content
+|    |--- notification
+|    |--- blog
+|    |--- invitedatabase
 |    |--- interfaces
 |    |--- middlewares
 |    |--- routes
@@ -17,7 +272,11 @@
 |    |--- utils
 |    |--- server.ts
 |--- .env
-|--- app.ts
+|--- config
+|   |---config.ts
+|   |--- roles.ts
+|--- app.tsx
+|--- index.tsx
 |--- .gitignore
 |--- package.json
 |--- tsconfig.json
