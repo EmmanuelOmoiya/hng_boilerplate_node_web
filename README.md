@@ -501,6 +501,7 @@ This project is versioned to ensure backward compatibility and easy maintenance.
 - Emmanuel Omoiya emmanuelomoiya6@gmail.com
 - Aroso Emmanuel Adedeji emarc.aroso@outlook.com
 - Nnenna Kehinde nneukamaka@gmail.com
+- Ikenna Eze iykee0333@gmail.com
 
 ## Contributing
 We welcome contributions to this Boilerplate project. Please follow these guidelines when contributing:
