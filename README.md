@@ -511,5 +511,5 @@ We welcome contributions to this Boilerplate project. Please follow these guidel
 4. Write clear and concise commit messages.
 5. Submit a pull request with a detailed description of your changes.
 
-For more information on our coding standards and best practices, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+For more information on our coding standards and best practices, please refer to the [CONTRIBUTING.md](https://github.com/EmmanuelOmoiya/hng_boilerplate_node_web/blob/main/CONTRIBUTORS_GUIDE.md) file.
 
