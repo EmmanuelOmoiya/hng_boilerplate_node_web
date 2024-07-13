@@ -1,4 +1,4 @@
-# [App Name] Integration Documentation
+# Strany Integration Documentation
 
 ## Overview
 
@@ -7,7 +7,7 @@
 ## Folder Structure
 
 ```
-|--- src
+|--- modules
 |    |--- controllers
 |    |--- database
 |    |--- interfaces
@@ -29,7 +29,11 @@
 - TypeScript
 - Express
 - ts-node-dev
-- [Other dependencies]
+- stripe-node-sdk
+- nodemailer
+- cookie-js
+- recharts
+- auth-js
 
 ## Getting Started
 
@@ -39,9 +43,6 @@ Before you begin, ensure you have the following installed on your machine:
 - [npm](https://www.npmjs.com/) (Node Package Manager, included with Node.js)
 - [Git](https://git-scm.com/)
 
-## Contribution Guide
-
-## Getting Started
 
 #### If you don't have git on your machine, [install it](https://docs.github.com/en/get-started/quickstart/set-up-git).
 
@@ -156,8 +157,8 @@ Soon your changes will be merged into the staging branch of this project. You wi
 First, clone the repository to your local machine using Git.
 
 ```sh
-git clone https://github.com/your-username/[app-name].git
-cd [app-name]
+git clone https://github.com/your-username/Strany.git
+cd Strany
 ```
 
 ### 2. Install Dependencies
@@ -254,3 +255,6 @@ All API endpoints can be referenced in the [API Reference](API_REFERENCE.md) doc
 ## Versioning
 
 This project is versioned to ensure backward compatibility and easy maintenance. The current version is [version].
+
+## Contribution Guide
+Refer to [CONTRIBUTING.md](./CONTRIBUTING.md) to learn more.
