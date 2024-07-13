@@ -147,103 +147,6 @@ The Notification collection, linked to Users, allows for a personalized notifica
 ## Invitation System:
 The Invite collection facilitates user onboarding to organizations.
 
-## API Specifications:
-Here are API endpoints and their specifications:
-
-## User Management:
-- POST /api/users - Create a new user
-- GET /api/users/:id - Retrieve user details
-- PUT /api/users/:id - Update user information
-- DELETE /api/users/:id - Delete a user (or deactivate)
-
-
-## Authentication:
-
-- POST /api/auth/login - User login
-- POST /api/auth/register - User registration
-- POST /api/auth/forgot-password - Initiate password reset
-- POST /api/auth/reset-password - Reset password
-- POST /api/auth/social/:provider - Social authentication
-
-
-Organization Management:
-
-- POST /api/organizations - Create a new organization
-- GET /api/organizations/:id - Retrieve organization details
-- PUT /api/organizations/:id - Update organization information
-- DELETE /api/organizations/:id - Delete an organization
-- POST /api/organizations/:id/members - Add a member to an organization
-- DELETE /api/organizations/:id/members/:userId - Remove a member from an organization
-
-
-## Payment Management:
-
-- POST /api/payments - Create a new payment
-- GET /api/payments/:id - Retrieve payment details
-- GET /api/users/:id/payments - Retrieve user's payment history
-
-
-## Messaging:
-
-- POST /api/messages - Send a new message
-- GET /api/messages/:id - Retrieve message details
-- GET /api/users/:id/messages - Retrieve user's message history
-
-
-## Email Templates:
-
-- POST /api/email-templates - Create a new email template
-- GET /api/email-templates/:id - Retrieve template details
-- PUT /api/email-templates/:id - Update a template
-- DELETE /api/email-templates/:id - Delete a template
-
-
-## Widget Management:
-
-- POST /api/widgets - Create a new widget
-- GET /api/widgets/:id - Retrieve widget details
-- PUT /api/widgets/:id - Update a widget
-- DELETE /api/widgets/:id - Delete a widget
-- GET /api/users/:id/widgets - Retrieve user's widgets
-
-
-## Activity Logging:
-
-- GET /api/activity-logs - Retrieve activity logs (with filtering options)
-- GET /api/users/:id/activity-logs - Retrieve user's activity logs
-
-
-## Content Management:
-
-- POST /api/content - Create new content
-- GET /api/content/:id - Retrieve content
-- PUT /api/content/:id - Update content
-- DELETE /api/content/:id - Delete content
-
-
-## Blog Management:
-
-- POST /api/blog-posts - Create a new blog post
-- GET /api/blog-posts/:id - Retrieve a blog post
-- PUT /api/blog-posts/:id - Update a blog post
-- DELETE /api/blog-posts/:id - Delete a blog post
-- GET /api/blog-posts - Retrieve all blog posts (with pagination)
-
-
-## Notification System:
-
-- POST /api/notifications - Create a new notification
-- GET /api/notifications/:id - Retrieve notification details
-- PUT /api/notifications/:id - Update a notification (e.g., mark as read)
-- GET /api/users/:id/notifications - Retrieve user's notifications
-
-
-## Invitation System:
-
-- POST /api/invites - Create a new invite
-- GET /api/invites/:id - Retrieve invite details
-- PUT /api/invites/:id - Update an invite (e.g., accept/reject)
-- DELETE /api/invites/:id - Delete an invite
 
 ## Dependencies (Dev)
 
@@ -491,7 +394,103 @@ By following these steps, you should have your Node.js and TypeScript applicatio
 
 ## API Endpoints
 
-All API endpoints can be referenced in the [API Reference](API_REFERENCE.md) document.
+Here are API endpoints and their specifications:
+
+## User Management:
+- POST /api/users - Create a new user
+- GET /api/users/:id - Retrieve user details
+- PUT /api/users/:id - Update user information
+- DELETE /api/users/:id - Delete a user (or deactivate)
+
+
+## Authentication:
+
+- POST /api/auth/login - User login
+- POST /api/auth/register - User registration
+- POST /api/auth/forgot-password - Initiate password reset
+- POST /api/auth/reset-password - Reset password
+- POST /api/auth/social/:provider - Social authentication
+
+
+## Organization Management:
+
+- POST /api/organizations - Create a new organization
+- GET /api/organizations/:id - Retrieve organization details
+- PUT /api/organizations/:id - Update organization information
+- DELETE /api/organizations/:id - Delete an organization
+- POST /api/organizations/:id/members - Add a member to an organization
+- DELETE /api/organizations/:id/members/:userId - Remove a member from an organization
+
+
+## Payment Management:
+
+- POST /api/payments - Create a new payment
+- GET /api/payments/:id - Retrieve payment details
+- GET /api/users/:id/payments - Retrieve user's payment history
+
+
+## Messaging:
+
+- POST /api/messages - Send a new message
+- GET /api/messages/:id - Retrieve message details
+- GET /api/users/:id/messages - Retrieve user's message history
+
+
+## Email Templates:
+
+- POST /api/email-templates - Create a new email template
+- GET /api/email-templates/:id - Retrieve template details
+- PUT /api/email-templates/:id - Update a template
+- DELETE /api/email-templates/:id - Delete a template
+
+
+## Widget Management:
+
+- POST /api/widgets - Create a new widget
+- GET /api/widgets/:id - Retrieve widget details
+- PUT /api/widgets/:id - Update a widget
+- DELETE /api/widgets/:id - Delete a widget
+- GET /api/users/:id/widgets - Retrieve user's widgets
+
+
+## Activity Logging:
+
+- GET /api/activity-logs - Retrieve activity logs (with filtering options)
+- GET /api/users/:id/activity-logs - Retrieve user's activity logs
+
+
+## Content Management:
+
+- POST /api/content - Create new content
+- GET /api/content/:id - Retrieve content
+- PUT /api/content/:id - Update content
+- DELETE /api/content/:id - Delete content
+
+
+## Blog Management:
+
+- POST /api/blog-posts - Create a new blog post
+- GET /api/blog-posts/:id - Retrieve a blog post
+- PUT /api/blog-posts/:id - Update a blog post
+- DELETE /api/blog-posts/:id - Delete a blog post
+- GET /api/blog-posts - Retrieve all blog posts (with pagination)
+
+
+## Notification System:
+
+- POST /api/notifications - Create a new notification
+- GET /api/notifications/:id - Retrieve notification details
+- PUT /api/notifications/:id - Update a notification (e.g., mark as read)
+- GET /api/users/:id/notifications - Retrieve user's notifications
+
+
+## Invitation System:
+
+- POST /api/invites - Create a new invite
+- GET /api/invites/:id - Retrieve invite details
+- PUT /api/invites/:id - Update an invite (e.g., accept/reject)
+- DELETE /api/invites/:id - Delete an invite
+
 
 ## Versioning
 
