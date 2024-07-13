@@ -2,7 +2,6 @@
 
 ## Overview
 
-[Description]
 Strany is a robust boilerplate API that offers developers with the ease and speed in creating lightning fast, robust and scalable web servers for their web apps.
 
 ## Features
@@ -118,7 +117,7 @@ This boilerplate includes the following features:
 - Support for push notifications
 
 # Concept Studies:
-[ERD Design: https://app.swaggerhub.com/apis/EMMANUELOMOIYA6/Backend-stage-3/1.0.0]
+[ERD Design](https://app.swaggerhub.com/apis/EMMANUELOMOIYA6/Backend-stage-3/1.0.0)
 The Entity-Relationship Diagram represents a robust and flexible schema for a multi-faceted application. Here's an analysis of the relationships and key design aspects:
 
 ## User-Centric Design:
@@ -152,99 +151,99 @@ The Invite collection facilitates user onboarding to organizations.
 Here are API endpoints and their specifications:
 
 ## User Management:
--- POST /api/users - Create a new user
--- GET /api/users/:id - Retrieve user details
--- PUT /api/users/:id - Update user information
--- DELETE /api/users/:id - Delete a user (or deactivate)
+- POST /api/users - Create a new user
+- GET /api/users/:id - Retrieve user details
+- PUT /api/users/:id - Update user information
+- DELETE /api/users/:id - Delete a user (or deactivate)
 
 
 ## Authentication:
 
-POST /api/auth/login - User login
-POST /api/auth/register - User registration
-POST /api/auth/forgot-password - Initiate password reset
-POST /api/auth/reset-password - Reset password
-POST /api/auth/social/:provider - Social authentication
+- POST /api/auth/login - User login
+- POST /api/auth/register - User registration
+- POST /api/auth/forgot-password - Initiate password reset
+- POST /api/auth/reset-password - Reset password
+- POST /api/auth/social/:provider - Social authentication
 
 
 Organization Management:
 
--- POST /api/organizations - Create a new organization
--- GET /api/organizations/:id - Retrieve organization details
--- PUT /api/organizations/:id - Update organization information
--- DELETE /api/organizations/:id - Delete an organization
--- POST /api/organizations/:id/members - Add a member to an organization
--- DELETE /api/organizations/:id/members/:userId - Remove a member from an organization
+- POST /api/organizations - Create a new organization
+- GET /api/organizations/:id - Retrieve organization details
+- PUT /api/organizations/:id - Update organization information
+- DELETE /api/organizations/:id - Delete an organization
+- POST /api/organizations/:id/members - Add a member to an organization
+- DELETE /api/organizations/:id/members/:userId - Remove a member from an organization
 
 
 ## Payment Management:
 
--- POST /api/payments - Create a new payment
--- GET /api/payments/:id - Retrieve payment details
--- GET /api/users/:id/payments - Retrieve user's payment history
+- POST /api/payments - Create a new payment
+- GET /api/payments/:id - Retrieve payment details
+- GET /api/users/:id/payments - Retrieve user's payment history
 
 
 ## Messaging:
 
--- POST /api/messages - Send a new message
--- GET /api/messages/:id - Retrieve message details
--- GET /api/users/:id/messages - Retrieve user's message history
+- POST /api/messages - Send a new message
+- GET /api/messages/:id - Retrieve message details
+- GET /api/users/:id/messages - Retrieve user's message history
 
 
 ## Email Templates:
 
--- POST /api/email-templates - Create a new email template
--- GET /api/email-templates/:id - Retrieve template details
--- PUT /api/email-templates/:id - Update a template
--- DELETE /api/email-templates/:id - Delete a template
+- POST /api/email-templates - Create a new email template
+- GET /api/email-templates/:id - Retrieve template details
+- PUT /api/email-templates/:id - Update a template
+- DELETE /api/email-templates/:id - Delete a template
 
 
 ## Widget Management:
 
--- POST /api/widgets - Create a new widget
--- GET /api/widgets/:id - Retrieve widget details
--- PUT /api/widgets/:id - Update a widget
--- DELETE /api/widgets/:id - Delete a widget
--- GET /api/users/:id/widgets - Retrieve user's widgets
+- POST /api/widgets - Create a new widget
+- GET /api/widgets/:id - Retrieve widget details
+- PUT /api/widgets/:id - Update a widget
+- DELETE /api/widgets/:id - Delete a widget
+- GET /api/users/:id/widgets - Retrieve user's widgets
 
 
 ## Activity Logging:
 
--- GET /api/activity-logs - Retrieve activity logs (with filtering options)
--- GET /api/users/:id/activity-logs - Retrieve user's activity logs
+- GET /api/activity-logs - Retrieve activity logs (with filtering options)
+- GET /api/users/:id/activity-logs - Retrieve user's activity logs
 
 
 ## Content Management:
 
--- POST /api/content - Create new content
--- GET /api/content/:id - Retrieve content
--- PUT /api/content/:id - Update content
--- DELETE /api/content/:id - Delete content
+- POST /api/content - Create new content
+- GET /api/content/:id - Retrieve content
+- PUT /api/content/:id - Update content
+- DELETE /api/content/:id - Delete content
 
 
 ## Blog Management:
 
--- POST /api/blog-posts - Create a new blog post
--- GET /api/blog-posts/:id - Retrieve a blog post
--- PUT /api/blog-posts/:id - Update a blog post
--- DELETE /api/blog-posts/:id - Delete a blog post
--- GET /api/blog-posts - Retrieve all blog posts (with pagination)
+- POST /api/blog-posts - Create a new blog post
+- GET /api/blog-posts/:id - Retrieve a blog post
+- PUT /api/blog-posts/:id - Update a blog post
+- DELETE /api/blog-posts/:id - Delete a blog post
+- GET /api/blog-posts - Retrieve all blog posts (with pagination)
 
 
 ## Notification System:
 
--- POST /api/notifications - Create a new notification
--- GET /api/notifications/:id - Retrieve notification details
--- PUT /api/notifications/:id - Update a notification (e.g., mark as read)
--- GET /api/users/:id/notifications - Retrieve user's notifications
+- POST /api/notifications - Create a new notification
+- GET /api/notifications/:id - Retrieve notification details
+- PUT /api/notifications/:id - Update a notification (e.g., mark as read)
+- GET /api/users/:id/notifications - Retrieve user's notifications
 
 
 ## Invitation System:
 
--- POST /api/invites - Create a new invite
--- GET /api/invites/:id - Retrieve invite details
--- PUT /api/invites/:id - Update an invite (e.g., accept/reject)
--- DELETE /api/invites/:id - Delete an invite
+- POST /api/invites - Create a new invite
+- GET /api/invites/:id - Retrieve invite details
+- PUT /api/invites/:id - Update an invite (e.g., accept/reject)
+- DELETE /api/invites/:id - Delete an invite
 
 
 
