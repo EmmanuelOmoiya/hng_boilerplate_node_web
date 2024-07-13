@@ -394,7 +394,7 @@ By following these steps, you should have your Node.js and TypeScript applicatio
 
 ## API Endpoints
 
-Here are API endpoints and their specifications:
+[Here are the API endpoints and their specifications:](https://app.swaggerhub.com/apis/EMMANUELOMOIYA6/Backend-stage-3/1.0.0)
 
 ## User Management:
 - POST /api/users - Create a new user
