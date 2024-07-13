@@ -245,42 +245,6 @@ Organization Management:
 - PUT /api/invites/:id - Update an invite (e.g., accept/reject)
 - DELETE /api/invites/:id - Delete an invite
 
-
-
-## Folder Structure
-
-```
-|--- modules
-|    |--- user
-|    |--- organisation
-|    |--- notification
-|    |--- payment
-|    |--- message
-|    |--- emailTemplate
-|    |--- widget
-|    |--- activityLog
-|    |--- contact
-|    |--- content
-|    |--- notification
-|    |--- blog
-|    |--- invitedatabase
-|    |--- interfaces
-|    |--- middlewares
-|    |--- routes
-|    |--- services
-|    |--- utils
-|    |--- server.ts
-|--- .env
-|--- config
-|   |---config.ts
-|   |--- roles.ts
-|--- app.tsx
-|--- index.tsx
-|--- .gitignore
-|--- package.json
-|--- tsconfig.json
-```
-
 ## Dependencies (Dev)
 
 - Node.js
@@ -476,12 +440,31 @@ Here's an overview of the project's folder structure:
 |    |--- database
 |    |--- interfaces
 |    |--- middlewares
+|    |--- modules
+|         |--- user
+|         |--- organisation
+|         |--- notification
+|         |--- payment
+|         |--- message
+|         |--- emailTemplate
+|         |--- widget
+|         |--- activityLog
+|         |--- contact
+|         |--- content
+|         |--- notification
+|         |--- blog
+|         |--- invitedatabase
 |    |--- routes
 |         |--- v1
 |    |--- services
 |    |--- utils
 |    |--- server.ts
 |--- .env
+|--- config
+|   |---config.ts
+|   |--- roles.ts
+|--- app.tsx
+|--- index.tsx
 |--- app.ts
 |--- .gitignore
 |--- package.json
